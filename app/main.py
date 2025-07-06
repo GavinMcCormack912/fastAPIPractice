@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto");
 
 
-models.Base.metadata.create_all(bind=engine)
+#models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 origins = ["*"]
